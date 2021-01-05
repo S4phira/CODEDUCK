@@ -176,3 +176,143 @@ body {
   justify-self: center;
   text-align: center;
 }
+
+.mySlides {
+  display: none;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* CONTACT */
+.contact {
+  background-color: #fab612;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.contact__map {
+  border: 3px solid #000;
+  margin-right: 150px;
+}
+
+.adress {
+  display: grid;
+  width: 600px;
+  color: #000;
+}
+
+.adress__button {
+  background-color: #fab612;
+  border: 2px solid #000;
+  color: #000;
+  font-weight: 700;
+  justify-self: end;
+  margin-right: 5px;
+  outline-style: none;
+  width: 200px;
+  height: 40px;
+}
+
+.adress__button:hover {
+  color: #000;
+}
+
+.adress__header {
+  color: #fff;
+  font-size: 70px;
+  text-align: right;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.adress__street {
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+.icon {
+  width: 25px;
+  padding-right: 5px;
+  padding-left: 25px;
+}
+
+.adress__desc {
+  font-size: 30px;
+  margin: 0;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #1f1e1e;
+  height: 80px;
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer span {
+  color: #fab612;
+}
+
+.footer__copywright {
+  margin: 0;
+  font-family: "Special Elite", cursive;
+  text-transform: uppercase;
+}
+
+.footer__icons {
+  position: absolute;
+  right: 100px;
+}
+
+.footer__logo {
+  height: 20px;
+}
+
+.footer__icons svg {
+  color: aqua;
+}

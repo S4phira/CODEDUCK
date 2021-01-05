@@ -39,33 +39,55 @@
                 <img class="projects__photo projects__photo--vertical" src="/img/home.jpg"/>
             </div> 
         </div>
+        
         <div class="opinions">
-            <div class="carousel__container">
-                <a class="carousel__nav carousel__nav--left"></a>
-                <div class="carousel__item">
+            <div class="slideshow-container ">
+                <div class="mySlides fade carousel__item">
                     <img class="customer__avatar" src="/img/avatar1.jpg"/>
                     <p class="customer__name">Joanna <span>Nowak</span> </p>
                     <p class="customer__comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
-                <div class="carousel__item">
+              
+                <div class="mySlides fade carousel__item">
                     <img class="customer__avatar" src="/img/avatar1.jpg"/>
-                    <p class="customer__name">Joanna <span>Nowak</span>  </p>
+                    <p class="customer__name">Joanna <span>Nowak</span> </p>
                     <p class="customer__comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
-                <div class="carousel__item">
+              
+                <div class="mySlides fade carousel__item">
                     <img class="customer__avatar" src="/img/avatar1.jpg"/>
-                    <p class="customer__name">Joanna <span>Nowak</span>  </p>
-                    <p class="customer__comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class="customer__name">Joanna <span>Nowak</span> </p>
+                    <p class="customer__comment">Lorem Ipsdsdum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
-                <a class="carousel__nav carousel__nav--right"></a>
-                <div class="carousel__slide" style="text-align:center">
-                    <span class="carousel__dot"></span>
-                    <span class="carousel__dot"></span>
-                    <span class="carousel__dot"></span>
-                  </div>
+            
+                <a class="carousel__nav carousel__nav--left" onclick="plusSlides(-1)"></a>
+                <a class="carousel__nav carousel__nav--right" onclick="plusSlides(1)"></a>
+              </div>
+            
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+            <div class="carousel__container">
+               
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="scroll-to-contact">
+            <div class="contact__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12267.298083251277!2d16.92144345531073!3d52.4041348943675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b309dae6ae9%3A0x835a1af76866d48b!2sWy%C5%BCsza%20Szko%C5%82a%20Bankowa!5e0!3m2!1spl!2spl!4v1609792478402!5m2!1spl!2spl" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            </div>
+           <div class="adress">
+               <p class="adress__header">Skontaktuj się <br> z nami</p>
+               <button class="adress__button button">zadaj pytanie</button>
+               <p class="adress__street adress__desc"><img class ="icon" src="/img/icon/iconfinder_icons_pin_1564524.svg"/> ul.Nowowiejska 53/3, Poznań</p>
+               <p class="adress__phone adress__desc"> <img class ="icon" src="/img/icon/iconfinder_icons_mobile_1564515.svg"/> +48 455 363 632</p>
+               <p class="adress__mail adress__desc"> <img class ="icon" src="/img/icon/iconfinder_contact_126567.svg"/> kontakt@codeduck.pl</p>
+           </div>
         </div>
+        <div class="footer">
+            <p class="footer__copywright"><span>© 2020</span> CODE<span>DUCK</span>    Cristian <span>Demkowicz</span></p>
+            <div class="footer__icons"><img class ="icon" src="/img/icon/facebook.svg"/> <img class ="icon" src="/img/icon/linkedin.svg"/> <img class ="icon" src="/img/icon/instagram.svg"/></div>
+        </div>
+        <script src="main.js"></script>
 </body>
 </html>
