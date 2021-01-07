@@ -28,7 +28,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("carousel__item");
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
@@ -42,4 +42,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active"
 }
 
+function hamburgerMenu() {
+  var x = document.getElementById("menu__list");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
