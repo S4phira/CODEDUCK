@@ -5,7 +5,8 @@
     <title>CODEDUCK</title>
     <link href="css/home.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
         <div class="menu">
@@ -22,7 +23,7 @@
                 <img class="home__logo" src="/img/CODEDUCK_LOGO.svg"/>
                 <div class="home__line"></div>
                 <p class="home__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <button class="home__button">Kontakt</button>
+                <button class="home__button button">Kontakt</button>
             </div>
         </div>
         <div class="projects">
@@ -41,47 +42,58 @@
         </div>
         
         <div class="opinions">
-            <div class="slideshow-container ">
+            <div class="carousel__container ">
                 <div class="mySlides fade carousel__item">
                     <img class="customer__avatar" src="/img/avatar1.jpg"/>
-                    <p class="customer__name">Joanna <span>Nowak</span> </p>
-                    <p class="customer__comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class="customer__name">Adam <span>Michalski</span> </p>
+                    <p class="customer__comment">Czynnikiem, który zadecydował o współpracy była fachowość w działaniu, kompleksowość oferowanych rozwiązań oraz otwartość na innowacyjne działania, nie tylko w samej realizacji naszych oczekiwań, ale i w inicjowaniu nowatorskich rozwiązań.</p>
                 </div>
               
                 <div class="mySlides fade carousel__item">
-                    <img class="customer__avatar" src="/img/avatar1.jpg"/>
+                    <img class="customer__avatar" src="/img/avatar2.jpg"/>
                     <p class="customer__name">Joanna <span>Nowak</span> </p>
-                    <p class="customer__comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class="customer__comment">Z agencją codeDuck współpracujemy od 2014 roku. Współpraca przebiega od początku wzorowo. Wysoko oceniamy kompetencje i doradztwo ze strony zespołu agencji, którą możemy polecić jako profesjonalnego partnera w zakresie działań internetowych.</p>
                 </div>
               
                 <div class="mySlides fade carousel__item">
-                    <img class="customer__avatar" src="/img/avatar1.jpg"/>
-                    <p class="customer__name">Joanna <span>Nowak</span> </p>
-                    <p class="customer__comment">Lorem Ipsdsdum is simply dummy text of the printing and typesetting industry.</p>
+                    <img class="customer__avatar" src="/img/avatar3.jpg"/>
+                    <p class="customer__name">Karolina <span>Kowalska</span> </p>
+                    <p class="customer__comment">codeDuck to firma godna zaufania. W ramach owocnej i bezproblemowej współpracy agencja codeDuck z sukcesami plasowała dla nas artykuły w mediach tradycyjnych i elektronicznych oraz gromadziła społeczności na najpopularniejszych portalach.</p>
                 </div>
             
                 <a class="carousel__nav carousel__nav--left" onclick="plusSlides(-1)"></a>
                 <a class="carousel__nav carousel__nav--right" onclick="plusSlides(1)"></a>
               </div>
             
-              <div style="text-align:center">
+              <div class="carousel__dot" style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
               </div>
-            <div class="carousel__container">
-               
-            </div>
         </div>
         <div class="contact" id="scroll-to-contact">
             <div class="contact__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12267.298083251277!2d16.92144345531073!3d52.4041348943675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b309dae6ae9%3A0x835a1af76866d48b!2sWy%C5%BCsza%20Szko%C5%82a%20Bankowa!5e0!3m2!1spl!2spl!4v1609792478402!5m2!1spl!2spl" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12267.298083251277!2d16.92144345531073!3d52.4041348943675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b309dae6ae9%3A0x835a1af76866d48b!2sWy%C5%BCsza%20Szko%C5%82a%20Bankowa!5e0!3m2!1spl!2spl!4v1609792478402!5m2!1spl!2spl" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            
+            </div>
            <div class="adress">
                <p class="adress__header">Skontaktuj się <br> z nami</p>
-               <button class="adress__button button">zadaj pytanie</button>
+               <button  id="modal_show" class="adress__button button">zadaj pytanie</button>
                <p class="adress__street adress__desc"><img class ="icon" src="/img/icon/iconfinder_icons_pin_1564524.svg"/> ul.Nowowiejska 53/3, Poznań</p>
                <p class="adress__phone adress__desc"> <img class ="icon" src="/img/icon/iconfinder_icons_mobile_1564515.svg"/> +48 455 363 632</p>
                <p class="adress__mail adress__desc"> <img class ="icon" src="/img/icon/iconfinder_contact_126567.svg"/> kontakt@codeduck.pl</p>
+           </div>
+           <div id="modal"class="modal">
+               <div class="modal__container">
+                   <div id="close" class="close"></div>
+                   <div class="form"> 
+                        <input placeholder="Imię*" class="first_name"/>
+                        <input placeholder="Nazwisko" class="last_name"/>
+                        <input placeholder="Telefon" class="phone_number"/>
+                        <input placeholder="Email*" class="email"/>
+                        <textarea placeholder="Twoja wiadomość*" class="message"></textarea>
+                        <button class="send button">Wyślij wiadomość</button>
+                    </div>
+               </div>
            </div>
         </div>
         <div class="footer">
