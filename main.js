@@ -9,6 +9,7 @@ let modal = document.getElementById("modal");
 let modal_button = document.getElementById("modal_show")
 let close_button = document.getElementById("close")
 let menu = document.getElementById("menu__list");
+let mobile_menu = document.getElementsById("hamburger_icon")
 
 modal_button.onclick = function() {
   modal.style.display = "block"
@@ -43,14 +44,10 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active"
 }
 
-function hamburgerMenu() {
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
+function showMenu() {
+  menu.style.display === "block" ? menu.style.display = "none" :  menu.style.display = "block"
 }
 function hideMenu(){
-  menu.style.display = "none"
+  mobile_menu.style.display == "block" ? menu.style.display = "none" : mobile_menu.style.display == "block"
 }
 
