@@ -76,9 +76,16 @@ $xxlarge: 1700px;
   }
   .hamburger_icon {
     display: block;
+    z-index: 3;
   }
   .menu__item {
     display: none;
+    position: absolute;
+    background-color: #1f1e1e;
+    font-size: 45px;
+    left: 0;
+    width: 100%;
+    padding: 30px 0 30px 0;
   }
   .menu__list {
     padding-right: 5%;
@@ -100,7 +107,7 @@ $xxlarge: 1700px;
   padding-bottom: 25px;
 }
 .home__photo {
-  height: 100%;
+  width: 50%;
   padding-right: 100px;
 }
 .home__desc {
@@ -176,6 +183,9 @@ $xxlarge: 1700px;
   }
 }
 @media screen and (max-width: 768px) {
+  .home__photo {
+    display: none;
+  }
   .home__gif {
     width: 60px;
   }
@@ -202,37 +212,47 @@ $xxlarge: 1700px;
   }
 }
 
-/* PROJECTS */
-.projects {
+/* SERVICES */
+.services {
   background-color: #1f1e1e;
   display: grid;
   justify-content: center;
   padding: 5% 10%;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.column {
-  padding: 0;
-  width: 25vw;
-  margin-left: 0;
-  margin-right: 0;
+.product__container {
+  border: 3px solid #7e5800;
+  padding: 30px;
+  margin: 10px;
 }
-.projects__photo {
-  padding: 10px;
-  width: 95%;
+.products__header {
+  font-size: 35px;
+  color: #fab612;
 }
-.projects__photo--horizontical {
+.line {
+  font-size: 45px !important;
+  color: #000;
+  font-weight: 700;
 }
-.projects__photo--vertical {
+.products__header .desc {
+  font-size: 20px;
+  color: #7e5800;
+  text-transform: uppercase;
+}
+.products__desc {
+  padding-top: 20px;
+  font-size: 23px;
+  color: #fff;
 }
 
-/*HOME breakpoints */
+/*SERVICES breakpoints */
 @media screen and (max-width: 1024px) {
-  .projects {
+  .services {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (max-width: 768px) {
-  .projects {
+  .services {
     grid-template-columns: 1fr;
   }
 }
@@ -328,7 +348,7 @@ $xxlarge: 1700px;
     opacity: 1;
   }
 }
-
+/* OPINIONS BREAKPOINTS*/
 @media screen and (max-width: 1440px) {
   .customer__comment {
     font-size: 20px;
@@ -451,7 +471,7 @@ $xxlarge: 1700px;
   font-size: 30px;
   margin: 0;
 }
-
+/* CONTACT BREAKPOINTS*/
 @media screen and (max-width: 1440px) {
   .adress__header {
     font-size: 50px;
@@ -622,6 +642,7 @@ $xxlarge: 1700px;
 .close:after {
   transform: rotate(-45deg);
 }
+/* MODAL BREAKPOINTS*/
 @media screen and (max-width: 1440px) {
   .modal__container {
     width: 55%;
@@ -686,7 +707,7 @@ $xxlarge: 1700px;
   width: 30px;
   cursor: pointer;
 }
-
+/* FOOTER BREAKPOINTS*/
 @media screen and (max-width: 1440px) {
   .footer {
     font-size: 20px;

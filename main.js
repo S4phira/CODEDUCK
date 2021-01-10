@@ -1,4 +1,4 @@
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -8,6 +8,7 @@ function plusSlides(n) {
 let modal = document.getElementById("modal");
 let modal_button = document.getElementById("modal_show")
 let close_button = document.getElementById("close")
+let menu = document.getElementById("menu__list");
 
 modal_button.onclick = function() {
   modal.style.display = "block"
@@ -43,11 +44,13 @@ function showSlides(n) {
 }
 
 function hamburgerMenu() {
-  var x = document.getElementById("menu__list");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
   } else {
-    x.style.display = "block";
+    menu.style.display = "block";
   }
+}
+function hideMenu(){
+  menu.style.display = "none"
 }
 
