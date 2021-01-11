@@ -5,11 +5,11 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-let modal = document.getElementById("modal");
-let modal_button = document.getElementById("modal_show")
-let close_button = document.getElementById("close")
-let menu = document.getElementById("menu__list");
-let mobile_menu = document.getElementsById("hamburger_icon")
+const modal = document.getElementById("modal");
+const modal_button = document.getElementById("modal_show")
+const close_button = document.getElementById("close")
+const menu = document.getElementById("menu__list");
+const mobile_menu = document.getElementById("hamburger_icon")
 
 modal_button.onclick = function() {
   modal.style.display = "block"
