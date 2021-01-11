@@ -99,6 +99,11 @@ $xxlarge: 1700px;
     font-size: 30px;
   }
 }
+@media screen and (max-width: 400px) {
+  .menu__item li {
+    font-size: 25px;
+  }
+}
 
 /* HOME SECTION */
 .home {
@@ -267,21 +272,22 @@ $xxlarge: 1700px;
 @media screen and (max-width: 400px) {
   .products__header {
     font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .desc {
+    margin-top: 10px;
   }
   .line {
-    font-size: 30px !important;
-    color: #000;
-    font-weight: 700;
+    display: none;
+  }
+  .services {
+    text-align: center;
   }
   .products__header .desc {
-    font-size: 15px;
-    color: #7e5800;
-    text-transform: uppercase;
+    font-size: 17px;
   }
   .products__desc {
-    padding-top: 20px;
-    font-size: 18px;
-    color: #fff;
+    font-size: 17px;
   }
 }
 /* OPINIONS */
@@ -563,6 +569,17 @@ $xxlarge: 1700px;
     font-size: 11px;
   }
 }
+@media screen and (max-width: 350px) {
+  .adress__header {
+    font-size: 25px;
+  }
+  .adress__button {
+    margin-top: -20px;
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
 /*MODAL*/
 .modal {
   display: none;
@@ -776,8 +793,14 @@ $xxlarge: 1700px;
   .footer {
     font-size: 12px;
     height: 50px;
-  }
-  .footer {
     padding-left: 5%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .footer {
+    font-size: 10px;
+  }
+  .footer__icons .icon {
+    width: 13px;
   }
 }

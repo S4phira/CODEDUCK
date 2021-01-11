@@ -18,7 +18,6 @@ body {
   margin-left: 10%;
 }
 .service__desc {
-  height: 600px;
   padding: 2% 0 0 14%;
   display: flex;
   font-size: 25px;
@@ -26,12 +25,14 @@ body {
 .service__text {
   color: #fff;
   width: 35%;
+  padding-right: 100px;
 }
 .service__photo {
   width: 45%;
-  padding: 100px;
-  margin-top: -260px;
+  padding: 5px;
+  margin-top: -240px;
   height: 500px;
+  border: 2px solid #fab612;
 }
 .service__desc2 {
   color: #fff;
@@ -40,24 +41,63 @@ body {
   text-align: center;
   margin-top: -300px;
 }
-.icons {
-  background-color: #fab612;
-  height: 250px;
+.description {
+  background-color: #000;
   display: flex;
   justify-content: space-around;
+  padding: 2% 15%;
 }
-.icons img {
-  width: 100px;
-  margin: auto;
+.description__card {
+  background-color: #000;
+  border: 2px solid #fab612;
+  color: #fff;
+  padding: 25px;
+  margin: 40px 0;
+  width: 340px;
+  font-size: 20px;
+  box-shadow: 14px 14px 31px -19px#fab612;
 }
-.icons div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.icons p {
+.description__card .header {
   font-size: 25px;
-  font-weight: 700;
-  text-align: center;
-  font-family: "Special Elite", cursive;
+  color: #fab612;
+  padding-bottom: 10px;
+}
+
+.icon {
+  margin-left: -90px;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  top: 25px;
+  width: 90%;
+  height: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  animation: arrow 700ms linear infinite;
+}
+
+.arrow::after,
+.arrow::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 10px;
+  right: 40px;
+  background-color: #fff;
+}
+
+.arrow::after {
+  top: -12px;
+  transform: rotate(-45deg);
+}
+
+.arrow::before {
+  top: 12px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(45deg);
 }
