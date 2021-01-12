@@ -8,8 +8,7 @@ function plusSlides(n) {
 const modal = document.getElementById("modal");
 const modal_button = document.getElementById("modal_show")
 const close_button = document.getElementById("close")
-const menu = document.getElementById("menu__list");
-const mobile_menu = document.getElementById("hamburger_icon")
+
 
 modal_button.onclick = function() {
   modal.style.display = "block"
@@ -44,10 +43,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active"
 }
 
-function showMenu() {
-  menu.style.display === "block" ? menu.style.display = "none" :  menu.style.display = "block"
-}
-function hideMenu(){
-  mobile_menu.style.display == "block" ? menu.style.display = "none" : mobile_menu.style.display == "block"
-}
 
