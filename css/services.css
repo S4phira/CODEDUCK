@@ -44,8 +44,8 @@ body {
 .description {
   background-color: #000;
   display: flex;
-  justify-content: space-around;
-  padding: 2% 15%;
+  justify-content: space-between;
+  padding: 2% 10%;
 }
 .description__card {
   background-color: #000;
@@ -100,4 +100,125 @@ body {
   top: 12px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   transform: rotate(45deg);
+}
+@media screen and (max-width: 1600px) {
+  .service__photo {
+    margin-top: -150px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .service__photo {
+    width: 40%;
+    margin-top: -120px;
+    height: 400px;
+  }
+  .service__text {
+    width: 35%;
+    padding-right: 70px;
+    font-size: 20px;
+  }
+  .description__card {
+    padding: 25px;
+    width: 220px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .description {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 2% 10%;
+  }
+  .description__card {
+    padding: 25px;
+    width: 80%;
+    font-size: 20px;
+  }
+  .service__photo {
+    display: none;
+  }
+  .service__desc {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .service__text {
+    width: 80%;
+    text-align: center;
+    padding-right: 0;
+  }
+  .service__header {
+    text-align: center;
+    padding: 10% 0 1% 0;
+  }
+  .line {
+    display: none;
+  }
+  .icon {
+    margin-left: 90px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icon {
+    width: 60px;
+    height: 30px;
+  }
+  .arrow::after {
+    top: -9px;
+    transform: rotate(-45deg);
+  }
+  .arrow::before {
+    top: 8px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .icon {
+    width: 40px;
+    height: 20px;
+  }
+  .arrow {
+    height: 6px;
+  }
+  .arrow::after {
+    top: -6px;
+    transform: rotate(-45deg);
+  }
+  .arrow::before {
+    top: 6px;
+  }
+  .arrow::after,
+  .arrow::before {
+    right: 22px;
+    height: 6px;
+  }
+  .service__text {
+    font-size: 18px;
+  }
+  .service__header {
+    font-size: 23px;
+  }
+  .description__card {
+    font-size: 17px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .icon {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  .service__text {
+    font-size: 17px;
+  }
+  .service__header {
+    font-size: 22px;
+  }
+  .description__card {
+    font-size: 17px;
+    width: 80%;
+  }
 }
