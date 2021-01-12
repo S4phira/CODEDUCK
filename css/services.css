@@ -221,4 +221,7 @@ body {
     font-size: 17px;
     width: 80%;
   }
+  .service__header p {
+    padding-top: 5%;
+  }
 }
