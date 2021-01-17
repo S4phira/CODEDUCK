@@ -8,13 +8,6 @@ html {
 .button {
   cursor: pointer;
 }
-/*
-$small: 400px;
-$medium: 768px;
-$large: 1024px;
-$xlarge: 1440px;
-$xxlarge: 1700px; 
-*/
 
 /* MENU */
 .menu {
@@ -559,12 +552,12 @@ $xxlarge: 1700px;
     font-size: 15px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .adress__header {
     font-size: 30px;
   }
   .adress__desc {
-    font-size: 18px;
+    font-size: 17px;
   }
   .adress__button {
     margin-top: -30px;
