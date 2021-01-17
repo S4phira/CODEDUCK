@@ -117,6 +117,7 @@ body {
     width: 35%;
     padding-right: 70px;
     font-size: 20px;
+    padding-bottom: 10%;
   }
   .description__card {
     padding: 25px;
@@ -213,7 +214,6 @@ body {
 
   .service__text {
     font-size: 17px;
-    padding-bottom: 10%;
   }
   .service__header {
     font-size: 22px;
