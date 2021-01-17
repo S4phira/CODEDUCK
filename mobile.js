@@ -6,6 +6,6 @@ function showMenu() {
   }
 
 function hideMenu(){
-    mobile_menu.style.display != "block"  ? menu.style.display = "none" : mobile_menu.style.display == "block"
+    mobile_menu.style.display != "block" && window.innerWidth < 1024 ? menu.style.display = "none" : mobile_menu.style.display == "block"
 }
   
